@@ -1,4 +1,4 @@
-import { Component, OnInit ,Input } from '@angular/core';
+import { Component, OnInit ,Input, Output ,EventEmitter } from '@angular/core';
 import { Task } from 'src/app/Task';
 
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
@@ -8,7 +8,7 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./tasks-item.component.css']
 })
 export class TasksItemComponent implements OnInit {
-
+@Output() onDoneTask: EventEmitter<Task> = new EventEmitter();
 @Input() task!:Task;
 faTimes=faCheckCircle;
   constructor() { }
@@ -16,4 +16,7 @@ faTimes=faCheckCircle;
   ngOnInit(): void {
   }
 
+  onDone(task: any){
+    this.onDoneTask.emit(task);
+  }
 }

@@ -1,3 +1,15 @@
-<app-tasks-item class="tasks-body" *ngFor="let task of tasks" [task]="task"><h4></h4>
+<app-add-task
+(onAddTask)="AddTask($event)"
+
+>
+    
+</app-add-task>
+
+<app-tasks-item class="tasks-body" 
+*ngFor="let task of tasks" 
+[task]="task"
+(onDoneTask)="doneTask(task)"
+
+>
     
 </app-tasks-item>

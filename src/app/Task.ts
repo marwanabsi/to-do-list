@@ -1,6 +1,6 @@
 export interface Task{
 id?:number;
 taskName:string;
-day:string;
+date:Date;
 done:boolean;
 }
