@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+app-heder{
+  width: 100%;
+}
+
+
+
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  margin: 0.8em;
+  border-radius: 0.2em;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: inherit;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+}

@@ -1,0 +1,14 @@
+.task{
+    padding: 0.5em 1em;
+    margin-top: 0.6em;
+    background-color: rgb(185, 185, 185);
+}
+
+.task h3 fa-icon{
+    
+    font-size: 2em;
+}
+.task h3 {
+    display: flex;
+    justify-content: space-between;
+}

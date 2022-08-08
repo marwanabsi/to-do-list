@@ -1,0 +1,16 @@
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    background-color: #1772ca; 
+    color: white;
+}
+
+
+
+.main-header nav a{
+    margin-left: 1em;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+}
