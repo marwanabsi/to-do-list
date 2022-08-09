@@ -28,9 +28,8 @@ app-heder{
   background: #000;
   color: #fff;
   border: none;
-  padding: 0.5em 1em;
-  margin: 0.8em;
-  border-radius: 0.2em;
+  padding: 1em 1.5em;
+  border-radius: 2em;
   cursor: pointer;
   text-decoration: none;
   font-size: 1em;

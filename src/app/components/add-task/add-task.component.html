@@ -1,13 +1,16 @@
 
 <form class="add-task-form" *ngIf="showAddTask" (ngSubmit)="onSubmet()">
-    <div class="task-fild">
-        <label for="taskName">Task</label>
-        <input type="text" name="taskName" [(ngModel)]="taskName" id="taskName" placeholder="Task Name">
+    <div class="input-add">
+        <div class="task-fild">
+            <label for="taskName">Task</label>
+            <input type="text" name="taskName" [(ngModel)]="taskName" id="taskName" placeholder="Task Name">
+        </div>
+        <div class="task-fild">
+            <label for="date">Date</label>
+            <input type="date" name="date" [(ngModel)]="date" id="date">
+        </div>
     </div>
-    <div class="task-fild">
-        <label for="date">Date</label>
-        <input type="date" name="date" [(ngModel)]="date" id="date">
-    </div>
+    
     <input type="submit" value="Save Task" class="btn">
     
 </form>

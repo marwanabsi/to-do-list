@@ -1,9 +1,11 @@
 <div class="body">
-
+<div class="add-button">
     <app-app-button
-    color= "{{showAddTask ? 'red' : 'green'}}"
-    text="{{showAddTask ? 'Close' : 'Add'}}"
-    (btnClick)="toggleAddTask()" ></app-app-button>
+    color= "{{showAddTask ? '#cd88ff' : '#a879e2'}}"
+    text="{{showAddTask ? '-' : '+'}}"
+    (btnClick)="toggleAddTask()" >
+</app-app-button>
+</div>
 <app-tasks></app-tasks>
 
 </div>
