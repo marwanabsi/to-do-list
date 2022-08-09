@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UiService } from 'src/app/services/ui.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-body',
@@ -7,15 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
 
-  constructor() { }
+  showAddTask!:boolean;
+  subscription!: Subscription;
+
+
+  constructor(private uiServes:UiService) { 
+    this.subscription = this.uiServes.onToggle()
+    .subscribe(
+      value => this.showAddTask =value)
+  }
 
   ngOnInit(): void {
   }
 
   toggleAddTask(){
-    console.log('Toggel Test');
+    this.uiServes.toggelAddTask();
   }
-  testAgain(){
-    console.log('Test Againnnn');
-  }
+
 }
